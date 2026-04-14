@@ -1,6 +1,6 @@
 namespace LegacyRenewalApp;
 
-public class PaymentFee
+public class PaymentFee : IPaymentFee
 {
     public (decimal Fee, string Note) Calculate(string paymentMethod, decimal amount)
     {
